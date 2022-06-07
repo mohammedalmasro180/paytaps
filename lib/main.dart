@@ -126,7 +126,7 @@ getdata();
                 onTap: (){
                   Navigator.push(
                       context, MaterialPageRoute(
-                      builder: (context) =>MyPal(title: "title")
+                      builder: (context) =>MyPal(title: "شراء التطبيق")
 
 
                   ));

@@ -1,4 +1,4 @@
-import 'dart:async';
+ import 'dart:async';
 import 'package:educational_mostaql/main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:io' show Platform;
@@ -46,14 +46,14 @@ class _paytapsState extends State<paytaps> {
     List<PaymentSdkAPms> apms = [];
     apms.add(PaymentSdkAPms.STC_PAY);
     var configuration = PaymentSdkConfigurationDetails(
-        profileId: "*profile id*",
-        serverKey: "*server key*",
-        clientKey: "*client key*",
+        profileId: "98615",
+        serverKey: "S2JNG2RBMB-JDMZGLJ2JT-9TTGBHJKBR",
+        clientKey: "C6KMNB-KTRT6D-N9TB6M-KT7NT7",
         cartId: "12433",
         cartDescription: "Flowers",
         merchantName: "Flowers Store",
         screentTitle: "Pay with Card",
-        amount: 20.0,
+        amount: 1.0,
         showBillingInfo: true,
         forceShippingInfo: false,
         currencyCode: "SAR",
@@ -114,9 +114,9 @@ class _paytapsState extends State<paytaps> {
 
   Future<void> applePayPressed() async {
     var configuration = PaymentSdkConfigurationDetails(
-        profileId: "98586",
-        serverKey: "S6JNG2GG6J-JDMWZK6LBL-D9HRNRDJH9",
-        clientKey: "CPKMNB-B2HN6D-NV9KGB-QNG66P",
+        profileId: "98615",
+        serverKey: "S2JNG2RBMB-JDMZGLJ2JT-9TTGBHJKBR",
+        clientKey: "C6KMNB-KTRT6D-N9TB6M-KT7NT7",
         cartId: "12433",
         cartDescription: "Flowers",
         merchantName: "Flowers Store",
@@ -158,8 +158,7 @@ class _paytapsState extends State<paytaps> {
     return IconButton(
       onPressed: () {
         payPressed();
-        go(context);
-      }, icon: Image.asset("img/mda.jpg"), iconSize: 300,);
+  save();    }, icon: Image.asset("img/mda.jpg"), iconSize: 300,);
   }
 }
 
